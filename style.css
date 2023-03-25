@@ -12,14 +12,15 @@ body {
 
 table {
     border: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
+    height: 500px;
+    margin: auto;
     margin-top: 200px;
 }
 
 input[type="button"] {
-    width: 100%;
-    padding: 20px 40px;
+    width: 100px;
+    height: 100px;
     background-color: rgb(31 41 55);
     color: white;
     font-size: 24px;
@@ -29,12 +30,14 @@ input[type="button"] {
 }
 
 input[type="text"] {
-    padding: 20px 30px;
+    padding: 30px;
     font-size: 24px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     border: 2px solid black;
+    width: 100%;
+    height: 100%;
 }
 
 input[type="button"]:hover {
@@ -43,10 +46,4 @@ input[type="button"]:hover {
 
 input[type="button"]:active {
     background-color: rgb(4, 5, 8);
-}
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
 }
