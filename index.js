@@ -1,4 +1,4 @@
-// Function that display value
+// Function that displays value
 function dis(val) {
     let result = document.getElementById("result");
     if (result.value === "0") {
@@ -39,28 +39,28 @@ function applyOp(a, b, op) {
             return a * b;
         case '/':
             if (b === 0) {
-                return NaN; // dividing by zero results in NaN
+                return NaN; // Dividing by zero results in NaN
             }
             return a / b;
         default:
-            return NaN; // for invalid operators
+            return NaN; // For invalid operators
     }
 }
 
-// Function that evaluates the digit and return result
+// Function that evaluates the digit and returns result
 function solve() {
     let x = document.getElementById("result").value;
-    let parts = x.match(/(\d+(\.\d+)?|\+|\-|\*|\/)/g); // split into numbers and operators
+    let parts = x.match(/(\d+(\.\d+)?|\+|\-|\*|\/)/g); // Split into numbers and operators
     if (!parts) {
-        return; // exit early if no parts are found
+        return; // Exits early if no parts are found
     }
     let values = [];
     let ops = [];
     for (let i = 0; i < parts.length; i++) {
         if (!isNaN(parts[i])) {
-            values.push(parseFloat(parts[i])); // push numbers to values
+            values.push(parseFloat(parts[i])); // Push numbers to values
         } else {
-            // perform previous operation
+            // Performs previous operation
             if (values.length >= 2) {
                 let b = values.pop();
                 let a = values.pop();
@@ -70,7 +70,7 @@ function solve() {
             ops.push(parts[i]);
         }
     }
-    // perform remaining operations
+    // Performs remaining operations
     while (ops.length > 0) {
         let op = ops.pop();
         let b = values.pop();
@@ -80,7 +80,7 @@ function solve() {
     document.getElementById("result").value = values[0];
 }
 
-// Function that clear the display
+// Function that clears the display
 function clr() {
     document.getElementById("result").value = "0";
 }
