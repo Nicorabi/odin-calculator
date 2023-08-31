@@ -1,3 +1,3 @@
 # odin-calculator
 
-Calculator project for the Odin Project.
+https://nicorabi.github.io/odin-calculator/
