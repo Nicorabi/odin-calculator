@@ -1,3 +1,3 @@
 # odin-calculator
 
-https://nicorabi.github.io/odin-calculator/
+Calculator project for https://www.theodinproject.com/lessons/foundations-calculator
